@@ -1,0 +1,154 @@
+structure
+
+
+criteria
+
+    -Add a new student to the class (first name, last name, student ID)
+    -Add a new assignment to the class (name of assignment, total points possible)
+    -Give a student a grade for an assignment (the grade can be between zero and the total points possible)
+    -Print out a formatted report that shows all of the students and all of the grade information
+
+
+notes
+
+    -Printing class and interface to pass in data classes per student
+    
+    - all data has student name associaiton
+    
+    
+    
+    
+Data types
+
+    Type class data
+
+        - semi dynamically allocated contuguous memory block of type student data
+    
+    Type student data
+        
+        - semi dynamic allocated contugous memory block of type assignment data
+       
+    Type assignment data
+    
+        - assighnment name
+        - score
+ 
+ Main data structure
+ 
+    Type T
+    
+    
+    
+    
+Data ID structure
+
+    store data with such tagged by and identifable by an ID, allows for more effecient acess and better orginization
+    
+    problem, if we want to acess a particular student data we need to iterate over entire student list and acess each class to get its name or id
+    
+    store id in a seprate container and, once we find the id than we can refernce the data object and acess its data
+        
+    contugous container block to utilize its simple itterator method
+    
+    takes in argument of a name (string literal) then assign ID, uses the first 4 letters not including whitespace than use ascii to get an id, and store in container
+    
+    in the same index store the student data object
+    
+    when acessig the index for id correspondes to index of container storing student data objects
+    
+    
+    
+    have container which stores a struct containing, the id and also the student data object.
+    
+    
+        
+    
+interface
+
+    adding data
+    retriving data
+    
+    use an const object to make any changes to student data by the use of an interface
+    
+    read only interface which only holds const function types to read student data
+    
+    
+process
+
+    creating a class book
+        
+        -create class data object
+    
+    adding students data
+    
+        -create const object, then use it to assign it to student data, delete const object
+    
+    adding student grades
+    
+        -create const object, then use it to assign it to the grade data, delete object
+    
+    printing student grades
+    
+        -reads student data through const functions
+    
+    
+
+structure
+
+    core_data::class_data class obj;
+    core_data::student_data student obj;
+    core_data assignment_data obj;
+    
+    user_input::class obj;
+    user_input::student const obl;
+    user_inout::grade const obj;
+    
+    user_acess::class_data get_class data ();
+
+
+namespace core_data {
+
+
+namespcae class data {
+    
+class class_data {
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    
+}
+    
+    
+namespace student data {
+    
+class student_data {
+    
+    
+    
+    
+    
+    
+    
+}
+    
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+

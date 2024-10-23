@@ -7,6 +7,21 @@
 *.o
 *.obj
 
+#ide 
+.idea/
+lab/lab.xcodeproj
+*lab/lab.xcodeproj
+*lab/lab.xcodeproj/project.pbxproj
+*project.pbxproj
+lab/
+
+
+#Mac
+*.DS_Store
+
+#cmake
+cmake-build-debug/
+
 # Precompiled Headers
 *.gch
 *.pch
